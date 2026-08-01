@@ -1,4 +1,4 @@
-#let submission-text(author, degree, elective) = (
+#let submission-text(degree, elective) = (
   "en": [
     Thesis submitted for the degree of Master of Science in #degree, option #elective
   ],
@@ -7,10 +7,10 @@
   ]
 )
 
-#let copyright(author: "<Insert Authors Here>") = (
+#let copyright(authors-string) = (
   "tm": [
-    #sym.copyright 2025 KU Leuven – Faculty of Engineering Science
-    Published by #author,
+    #sym.copyright 2025 KU Leuven – Faculty of Engineering Science\
+    Published by #authors-string,\
     Department of Computer Science, Celestijnenlaan 200A bus 2402, B-3001 Leuven
   ],
   "en" :[
